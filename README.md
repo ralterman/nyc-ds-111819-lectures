@@ -1,4 +1,4 @@
-# Lecture Notes for nyc-mhtn-ds-111819 :floppy_disk:
+# Lecture Notes for nyc-ds-111819 :floppy_disk:
 
 ## To update a local repo after forking and cloning
 
@@ -6,7 +6,7 @@
 
 1. Add the learn-co lecture notes repo as the remote, **this step only happens once**
 ```
-git remote add upstream https://github.com/learn-co-students/nyc-mhtn-ds-111819-lectures.git
+git remote add upstream https://github.com/learn-co-students/nyc-ds-111819-lectures.git
 ```
 
 2. Check the remote is set and your lecture notes repo is correct.
