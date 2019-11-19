@@ -28,8 +28,6 @@ After we have our data formated the way we want it, we can now begin working on 
 
 ### Functions to build-out:
 
-Each of the following functions can be defined in the `functions.py` file. 
-
 * **Searching functions**
   * Find by name - Takes in a string that represents the name of an album. Should return a dictionary with the correct album, or return `None`.
   * Find by rank - Takes in a number that represents the rank in the list of top albums and returns the album with that rank. If there is no album with that rank, it returns `None`.
@@ -41,9 +39,8 @@ Each of the following functions can be defined in the `functions.py` file.
   * All artists - Returns a list of artist names for each album.
 * **Questions to answer / functions**
   * Artists with the most albums - Returns the artist with the highest amount of albums on the list of top albums 
-  * Most popular word - Returns the word used most in amongst all album titles
-  * Histogram of albums by decade - Returns a histogram with each decade pointing to the number of albums released during that decade.
-  * Histogram by genre - Returns a histogram with each genre pointing to the number of albums that are categorized as being in that genre.
+  * **(Bonus)** Most popular word - Returns the word used most in amongst all album titles
+
 
 ## Next Steps
 
