@@ -35,8 +35,8 @@ After we have our data formated the way we want it, we can now begin working on 
   * Find by years - Takes in a start year and end year. Returns a list of all albums that were released on or between the start and end years. If no albums are found for those years, then an empty list is returned. 
   * Find by ranks - Takes in a start rank and end rank. Returns a list of albums that are ranked between the start and end ranks. If no albums are found for those ranks, then an empty list is returned.
 * **All functions**
-  * All titles - Returns a list of titles for each album.
-  * All artists - Returns a list of artist names for each album.
+  * All titles - Returns a list of titles for all albums on the list.
+  * All artists - Returns a list of all the artists that have albums on the list.
 * **Questions to answer / functions**
   * Artists with the most albums - Returns the artist with the highest amount of albums on the list of top albums 
   * **(Bonus)** Most popular word - Returns the word used most in amongst all album titles
@@ -72,7 +72,7 @@ Once we have a list of songs that are formatted like the above, we can move on t
 
 ### Working with the top 500 songs
 
-If we can't already re-use our searching functions (i.e. Find by name, Find by rank, Find by year, Find by years, Find by ranks), all functions (i.e. all titles, all artists), and questions-to-answer functions (i.e. Artists with the most albums (or songs), Most popular word, Histogram by decade, Histogram by genre) with the song data we just formatted, then refactor these functions so that they can be used with either set of data. This is a good practice for ensuring that our code is as reusable and modular as possible, which is important when writing code for any project, especially when it comes time to scale a project. Things are easier to read, and there is less code to worry about (and more importantly there is less code to debug when something goes wrong).
+If we can't already re-use our searching functions (i.e. Find by name, Find by rank, Find by year, Find by years, Find by ranks), all functions (i.e. all titles, all artists), and questions-to-answer functions (i.e. Artists with the most albums (or songs), Most popular word) with the song data we just formatted, then refactor these functions so that they can be used with either set of data. This is a good practice for ensuring that our code is as reusable and modular as possible, which is important when writing code for any project, especially when it comes time to scale a project. Things are easier to read, and there is less code to worry about (and more importantly there is less code to debug when something goes wrong).
 
 Once we have our functions working for both sets of data, we can start writing new functions!
 
@@ -93,12 +93,15 @@ print(json_data)
 
 ### Define the following functions:
 
-**albumWithMostTopSongs** - returns the name of the artist and album that has that most songs featured on the top 500 songs list
 
-**albumsWithTopSongs** - returns a list with the name of only the albums that have tracks featured on the list of top 500 songs
+**albumsWithTopSongs** - returns a list of the albums that have tracks featured on the list of top 500 songs
 
-**songsThatAreOnTopAlbums** - returns a list with the name of only the songs featured on the list of top albums
+**albumsCountTopSongs** returns a list of dictionaries with each album and the number of songs it has on the top 500 songs list. 
 
-**top10AlbumsByTopSongs** - returns a histogram with the 10 albums that have the most songs that appear in the top songs list. The album names should point to the number of songs that appear on the top 500 songs list.
+**albumWithMostTopSongs** - returns the name of the album that has that most songs featured on the top 500 songs list
 
-**topOverallArtist** - Artist featured with the most songs and albums on the two lists. This means that if Brittany Spears had 3 of her albums featured on the top albums listed and 10 of her songs featured on the top songs, she would have a total of 13. The artist with the highest aggregate score would be the top overall artist.
+**songsPerArtist** - returns a list of dictionaries for all the artists who have songs on the top 500 list, and a count of how many songs they have on the list
+
+**artistsWithTopSongs** - returns the artist with the most songs on the top 500 songs list
+
+**countOneHitters** returns the number of artists who have only one song on the top 500 songs list. 
