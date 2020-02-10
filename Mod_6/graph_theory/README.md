@@ -4,4 +4,4 @@
 
 Case study notebook explores a Game of Thrones data set and how to use Graph algorithms to augment tabular data for Machine Learning.
 
-Update repo can be found at https://github.com/danjizquierdo/graph-of-thrones
+Updated repo can be found at https://github.com/danjizquierdo/graph-of-thrones
